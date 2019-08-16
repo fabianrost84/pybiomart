@@ -14,7 +14,7 @@ Querying
 
 Dataset instances can be used to query the biomart server using their *query* method. This method takes an optional argument *attributes* which specifies the attributes to be retrieved:
 
-  >>> dataset.query(attributes=['ensembl_gene_id', 'external_gene_name']})
+  >>> dataset.query(attributes=['ensembl_gene_id', 'external_gene_name'])
 
 The *query* method returns a pandas DataFrame instance, which contains a DataFrame representation of the requested attributes. If no attributes are given, the default attributes of the dataset are used. These default attributes can be identified using the *default_attributes* property of the dataset. A list of all available attributes can be obtained from the *attributes* property. Alternatively, a more convenient overview of all attributes can be obtained in DataFrame format using the *list_attributes* method.
 
